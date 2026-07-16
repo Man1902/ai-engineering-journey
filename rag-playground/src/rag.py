@@ -33,7 +33,13 @@ def answer(question:str, retriever:VectorStoreRetriever):
 
     chain = prompt | model
 
-    return chain.invoke({
+    # to return the full response at once
+    # return chain.invoke({
+    #     "context": context,
+    #     "question": question
+    # })
+
+    return chain.stream({
         "context": context,
         "question": question
     })

@@ -27,4 +27,6 @@ while True:
 
     print("\nAnswer:\n")
 
-    print(response.content)
+    # print(response.content)
+    for chunk in response:
+        print(chunk.content, end="", flush=True)
