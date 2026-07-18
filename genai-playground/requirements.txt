@@ -1,0 +1,6 @@
+# Note: Python 3.14.6
+ollama==0.6.2
+google-genai==2.11.0
+openai==2.46.0
+pydantic-settings==2.14.2
+pydantic==2.13.4
